@@ -1,0 +1,4 @@
+-i http://localhost:8989/root/pypi/+simple/
+
+gnureadline  # fix osx elpy issue
+pytest
