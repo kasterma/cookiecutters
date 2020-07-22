@@ -1,4 +1,7 @@
 -i http://localhost:8989/root/pypi/+simple/
 
+black
 gnureadline  # fix osx elpy issue
+hypothesis
 pytest
+safety

@@ -1,4 +1,6 @@
-VENV=source venv/bin/activate
+VENV=. venv/bin/activate
+
+all: venv test format scan
 
 .PHONY: venv
 venv:
@@ -13,3 +15,11 @@ clean:
 .PHONY: test
 test:
 	${VENV} ; pytest
+
+.PHONY: format
+format:
+	${VENV} ; black *.py
+
+.PHONY: scan
+scan:
+	${VENV} ; safety check
