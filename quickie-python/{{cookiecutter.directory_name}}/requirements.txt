@@ -1,5 +1,6 @@
 -i http://localhost:8989/root/pypi/+simple/
 
+bandit
 black
 gnureadline  # fix osx elpy issue
 hypothesis

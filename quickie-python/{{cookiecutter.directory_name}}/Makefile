@@ -23,3 +23,4 @@ format:
 .PHONY: scan
 scan:
 	${VENV} ; safety check
+	${VENV} ; bandit *.py  # Note: will warn for asserts in tests
