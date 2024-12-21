@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version = "0.0.0"
+description = ""
+authors = ["Bart Kastermans <kasterma@kasterma.net>"]
+readme = "README.md"
+packages = [{include = "{{cookiecutter.project_name}}"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+bandit = "^1.8.0"
+black = "^24.10.0"
+hypothesis = "^6.122.5"
+pytest = "^8.3.4"
+safety = "^3.2.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
